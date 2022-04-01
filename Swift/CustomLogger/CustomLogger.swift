@@ -1,9 +1,9 @@
-public class OLLogger {
+public class CustomLogger {
 
   // MARK: Properties
 
-  public static let sharedInstance: OLLogger = {
-    let instance = OLLogger()
+  public static let sharedInstance: CustomLogger = {
+    let instance = CustomLogger()
     return instance
   }()
   private var log: String
