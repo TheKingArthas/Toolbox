@@ -16,4 +16,11 @@ This utility allows to know which `Iphone screen size` match the current device 
 [-> Go to code <-](/Swift/IphoneModelScreenSize/)
 
 ---
+
+### Pragma marks
+Recommended sorted pragma marks.
+
+[-> Go to code <-](/Swift/PragmaMarks)
+
+---
 ---
