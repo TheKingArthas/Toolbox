@@ -1,9 +1,12 @@
 import UIKit
 
 @objc(IphoneModelScreenSize)
-class IphoneModelScreenSize: NSObject {
+public class IphoneModelScreenSize: NSObject {
+
+    // MARK: Enums
+
     // swiftlint:disable identifier_name
-    @objc enum IphoneModelScreenSize: Int {
+    public enum IphoneModelScreenSize: Int {
     case notAnIphone = 0,
          twoThreeOrFour = 1,
          se = 2,
@@ -13,7 +16,9 @@ class IphoneModelScreenSize: NSObject {
          elevenProMaxOrXsMax = 6
     }
 
-    @objc class func screenSize() -> IphoneModelScreenSize {
+    // MARK: Class properties
+
+    public class func screenSize() -> IphoneModelScreenSize {
         let bounds = UIScreen.main.bounds
         let screenWidth = bounds.size.width
         let screenHeight = bounds.size.height
@@ -35,4 +40,34 @@ class IphoneModelScreenSize: NSObject {
           return .notAnIphone
         }
     }
+
+    public class func screenSizeStringValue() -> String {
+        return screenSizeEnumToString(screenSize())
+    }
+
+    // MARK: Private properties
+
+    private class func screenSizeEnumToString(_ screenSize: IphoneModelScreenSize) -> String {
+        var screenSizeAsString: String
+
+        switch screenSize {
+        case .notAnIphone:
+            screenSizeAsString = "Not an Iphone"
+        case .twoThreeOrFour:
+            screenSizeAsString = "2G, 3G, 3GS, 4 or 4s"
+        case .se:
+            screenSizeAsString = "5, 5s, 5c or SE"
+        case .sixSevenOrEight:
+            screenSizeAsString = "6, 6s, 7 or 8"
+        case .plus:
+            screenSizeAsString = "6+, 6s+, 7+ or 8+"
+        case .elevenXorXS:
+            screenSizeAsString = "11 Pro, X or Xs"
+        case .elevenProMaxOrXsMax:
+            screenSizeAsString = "11, Xr, 11 Pro Max or Xs Max"
+        }
+
+        return screenSizeAsString
+    }
+
 }
