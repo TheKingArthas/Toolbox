@@ -2,7 +2,7 @@ import UIKit
 
 public class CustomLogger {
 
-    // MARK: Class enums
+    // MARK: Enums
 
     public enum LineIdentifier {
         case counter, timeStamp
