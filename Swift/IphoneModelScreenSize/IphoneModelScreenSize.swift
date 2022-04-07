@@ -1,35 +1,38 @@
+import UIKit
+
 @objc(IphoneModelScreenSize)
 class IphoneModelScreenSize: NSObject {
-  @objc enum IphoneModelScreenSize: Int {
-    case NotAnIphone = 0,
-         TwoThreeOrFour = 1,
-         SE = 2,
-         SixSevenOrEight = 3,
-         Plus = 4,
-         ElevenXorXS = 5,
-         ElevenProMaxOrXsMax = 6
-  }
-  
-  @objc class func screenSize() -> IphoneModelScreenSize {
-    let bounds = UIScreen.main.bounds
-    let screenWidth = bounds.size.width
-    let screenHeight = bounds.size.height
-
-    switch (screenWidth, screenHeight) {
-    case (320.0, 480.0):
-      return .TwoThreeOrFour
-    case (320.0, 568.0):
-      return .SE
-    case (375.0, 667.0):
-      return .SixSevenOrEight
-    case (414.0, 736.0):
-      return .Plus
-    case (375.0, 812.0):
-      return .ElevenXorXS
-    case (414.0, 896.0):
-      return .ElevenProMaxOrXsMax
-    default:
-      return .NotAnIphone
+    // swiftlint:disable identifier_name
+    @objc enum IphoneModelScreenSize: Int {
+    case notAnIphone = 0,
+         twoThreeOrFour = 1,
+         se = 2,
+         sixSevenOrEight = 3,
+         plus = 4,
+         elevenXorXS = 5,
+         elevenProMaxOrXsMax = 6
     }
-  }
+
+    @objc class func screenSize() -> IphoneModelScreenSize {
+        let bounds = UIScreen.main.bounds
+        let screenWidth = bounds.size.width
+        let screenHeight = bounds.size.height
+
+        switch (screenWidth, screenHeight) {
+        case (320.0, 480.0):
+          return .twoThreeOrFour
+        case (320.0, 568.0):
+          return .se
+        case (375.0, 667.0):
+          return .sixSevenOrEight
+        case (414.0, 736.0):
+          return .plus
+        case (375.0, 812.0):
+          return .elevenXorXS
+        case (414.0, 896.0):
+          return .elevenProMaxOrXsMax
+        default:
+          return .notAnIphone
+        }
+    }
 }
