@@ -23,4 +23,11 @@ Recommended sorted pragma marks.
 [-> Go to code <-](/Swift/PragmaMarks)
 
 ---
+
+### Random values
+Add the possibility to obtain random values from some system types.
+
+[-> Go to code <-](/Swift/RandomValues)
+
+---
 ---
