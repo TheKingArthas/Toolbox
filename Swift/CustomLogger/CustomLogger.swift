@@ -27,6 +27,9 @@ public class CustomLogger {
     // MARK: Initialization
 
     private init() {
+        /*
+        lineIdentifier must be changed in the initializer if you desire to use another type of identifier.
+        */
         log = ""
         lineIdentifier = .counter
         lineNumber = 0
@@ -66,7 +69,6 @@ public class CustomLogger {
         case .timeStamp:
             currentIdentifier = currentTimeTag()
         }
-
         return "[\(currentIdentifier)]"
     }
 

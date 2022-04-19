@@ -66,7 +66,6 @@ public class IphoneModelScreenSize: NSObject {
         case .elevenProMaxOrXsMax:
             screenSizeAsString = "11, Xr, 11 Pro Max or Xs Max"
         }
-
         return screenSizeAsString
     }
 
