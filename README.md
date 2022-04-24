@@ -16,6 +16,13 @@ This utility allows to know which `Iphone screen size` match the current device 
 [-> Go to code <-](/Swift/IphoneModelScreenSize/)
 
 ---
+### Difference between two dates
+This utility extends the `Date` class allowing to know the difference between two instances of them.
+<br>Available units: `years`, `months`, `weeks`, `days`, `hours`, `minutes`, `seconds`.
+
+[-> Go to code <-](/Swift/DifferenceBetweenDates/)
+
+---
 
 ### Month
 `Month` enum with the functionality to obtain the next month.
