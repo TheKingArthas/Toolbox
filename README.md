@@ -1,9 +1,9 @@
-# Toolbox
+# 🛠 Toolbox
 Tools and templates for different languages.
 
 ---
 ---
-## Swift
+## <img src="./Documentation/Assets/Icons/swift-logo.svg" width="20" height="20"> Swift
 ### Custom logger
 This is a `Singleton` class who allows to add Strings to it and then show all of them in a `dialog message`.
 
