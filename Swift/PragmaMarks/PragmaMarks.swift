@@ -1,10 +1,12 @@
 // MARK: Enums
-// MARK: Class properties
+// MARK: Public class properties
+// MARK: Private class properties
 // MARK: Public properties
 // MARK: Private properties
 // MARK: IBOutlets
 // MARK: Initialization
-// MARK: Class methods
+// MARK: Public class methods
+// MARK: Private class methods
 // MARK: Public methods
 // MARK: Private methods
 // MARK: IBActions
